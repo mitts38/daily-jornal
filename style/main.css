@@ -1,0 +1,10 @@
+body{
+background-color: orchid;
+}
+
+.jornalitems{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: gray;
+}
