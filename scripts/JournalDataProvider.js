@@ -1,49 +1,53 @@
-const journal = [
-    
-     {
-        date: "11/15/2019",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
+
+let entries =[]
+
+export const editEntry = (entryJournal) =>{
+  return fetch(`http://localhost:3000/entries/${entryJournal.id}`,{
+    method: 'PUT', 
+    headers:{
+      "Content-Type":"application/json"
     },
+    body:JSON.stringify(entryObject)
+  })
+  .then(getEntries)
+}
 
-     {
-        date: "11/18/2019",
-        concept: " intro of java script",
-        entry: "We talked about java script.",
-        mood: "Ok"
-    },
+export const saveEntry = entry => {
+  return fetch('http://localhost:3000/entries', {
+       method: "POST",
+       headers: {
+           "Content-Type": "application/json"
+       },
+       body: JSON.stringify(entry)
+   })
+   .then(getEntries)
+ }
+ 
+export const deleteEntry = entryId =>{
+  return fetch(`http://localhost:3000/entries/${entryId}`, {
+    method: "DELETE"
+  })
+    .then(getEntries)
+}
 
-     {
-        date: "11/19/2019",
-        concept: "git hub",
-        entry: "we learned about git hub addinng repositories and how's git hub work and help.",
-        mood: "Ok"
-    },
 
-     {
-        date: "11/22/2019",
-        concept: "Hello-project",
-        entry: "We did our first hello group project.",
-        mood: "Ok"
-     },
+export const getEntries = () => {
 
-     {
-        date: "11/22/2019",
-        concept: "automation in java script",
-        entry: "start learning about automation code.",
-        mood: "Ok"
-     }
-]
+  console.log("about to get data")
+ return fetch("http://localhost:3000/entries") 
+  .then(response => response.json())  // Parse  JSON
+  .then (parsedEntries => {
+    entries = parsedEntries.slice()
+  })
+}
 
-/*
-    You export a function that provides a version of the
-    raw data in the format that you want
-*/
+
+
+
 export const useJournalEntries = () => {
-    const sortedByDate = journal.sort(
-        (currentEntry, nextEntry) =>
-            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-    )
-    return sortedByDate
+
+  const sortedByDate = entries.slice(
+    
+  )
+  return sortedByDate
 }

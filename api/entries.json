@@ -1,0 +1,67 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "date": "11/15/2019",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Ok"
+    },
+    {
+      "id": 2,
+      "date": "11/18/2019",
+      "concept": " intro of java script",
+      "entry": "We talked about java script.",
+      "mood": "Ok"
+    },
+    {
+      "id": 3,
+      "date": "11/19/2019",
+      "concept": "git hub",
+      "entry": "we learned about git hub addinng repositories and how's git hub work and help.",
+      "mood": "Ok"
+    },
+    {
+      "id": 4,
+      "date": "11/22/2019",
+      "concept": "Hello-project",
+      "entry": "We did our first hello group project.",
+      "mood": "Ok"
+    },
+    {
+      "id": 5,
+      "date": "11/22/2019",
+      "concept": "Automation in java script",
+      "entry": "Automated the generation of the HTML representations .",
+      "mood": "Ok"
+    },
+    {
+      "id": 6,
+      "date": "12/3/2019",
+      "concept": "Drop Down Element",
+      "entry": " implementing a element so that you have a drop-down element on the screen that lists .",
+      "mood": "Ok"
+    },
+    {
+      "id": 7,
+      "date": "12/05/2019",
+      "concept": "Decoupling With Event",
+      "entry": "A Discussion about Loose Coupling  .",
+      "mood": "Ok"
+    },
+    {
+      "id": 8,
+      "date": "12/06/2019",
+      "concept": "Filtering",
+      "entry": "Learned how to filter file .",
+      "mood": "Ok"
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "        ",
+      "mood": "neutral",
+      "id": 9
+    }
+  ]
+}
